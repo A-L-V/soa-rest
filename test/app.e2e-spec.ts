@@ -3,6 +3,10 @@ import { INestApplication } from '@nestjs/common';
 import * as request from 'supertest';
 import { AppModule } from './../src/app.module';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 66ddcd51f24d48b5906d8fbe176b883055b0f1d4
 describe('AppController (e2e)', () => {
   let app: INestApplication;
 
