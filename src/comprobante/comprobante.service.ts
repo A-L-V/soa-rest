@@ -34,7 +34,7 @@ export class ComprobanteService {
       relations: ['Producto'],
     });;
   }
-
+  
 
   update(id: number, updateComprobanteDto: UpdateComprobanteDto) {
     return `This action updates a #${id} comprobante`;

@@ -15,6 +15,7 @@ import { DetalleModule } from './detalle/detalle.module';
 import { ComprobanteModule } from './comprobante/comprobante.module';
 import { Detalle } from './detalle/entities/detalle.entity';
 import { Comprobante } from './comprobante/entities/comprobante.entity';
+import { ClienteModule } from './cliente/cliente.module';
 
 @Module({
   imports: [
@@ -33,7 +34,8 @@ import { Comprobante } from './comprobante/entities/comprobante.entity';
   RecetaModule,
   DetalleRecetaModule,
   DetalleModule,
-  ComprobanteModule
+  ComprobanteModule,
+  ClienteModule
 
 ],
   controllers: [AppController],
