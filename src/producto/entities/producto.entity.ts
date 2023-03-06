@@ -9,11 +9,12 @@ export class Producto {
     @Column()
     nombre: string;
 
+
     @Column()
     precio: number;   
 
     @Column()
-    image: string;
+    temporal: string;
 
     @OneToMany(() => DetalleReceta, DetalleReceta => DetalleReceta.producto)
     public DetalleReceta: DetalleReceta[];
