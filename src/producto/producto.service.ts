@@ -29,5 +29,12 @@ export class ProductoService {
     return this.productoRepository.findOneBy({ id });
   }
 
+  remove(id: number) {
+    return this.productoRepository.delete(id);
+  }
+
+  update(id: number, updateProductoDto: UpdateProductoDto) {
+    return this.productoRepository.update(id,updateProductoDto)
+  }
 
 }

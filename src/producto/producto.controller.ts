@@ -22,4 +22,13 @@ export class ProductoController {
     return this.productoService.create(createProductoDto);
   }
 
+  @Patch(':id')
+  update(@Param('id') id: string, @Body() updateProductoDto: UpdateProductoDto) {
+    return this.productoService.update(+id, updateProductoDto);
+  }
+
+  @Delete(':id')
+  remove(@Param('id') id: string) {
+    return this.productoService.remove(+id);
+  }
 }
