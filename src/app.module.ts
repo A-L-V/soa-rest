@@ -27,7 +27,7 @@ import { ClienteModule } from './cliente/cliente.module';
     password: 'VD!!Z13$r68*',
     database: 'SOA_database',
     entities: [Receta,Producto,DetalleReceta, Detalle, Comprobante ],
-    synchronize: false,
+    synchronize: true,
     autoLoadEntities: true,
   }),
   ProductoModule,
