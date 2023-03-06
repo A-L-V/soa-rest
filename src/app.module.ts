@@ -21,11 +21,11 @@ import { ClienteModule } from './cliente/cliente.module';
   imports: [
     TypeOrmModule.forRoot({
     type: 'mysql',
-    host: 'bezkttxtiz5kucwty8eh-mysql.services.clever-cloud.com',
+    host: 'soa.c3wjwhw7b5sl.us-east-1.rds.amazonaws.com',
     port: 3306,
-    username: 'u6uhe2cs3xxnbzxr',
-    password: 'A7Rpt38bKOCaY5S7Kdt8',
-    database: 'bezkttxtiz5kucwty8eh',
+    username: 'admin',
+    password: 'VD!!Z13$r68*',
+    database: 'SOA_database',
     entities: [Receta,Producto,DetalleReceta, Detalle, Comprobante ],
     synchronize: true,
     autoLoadEntities: true,

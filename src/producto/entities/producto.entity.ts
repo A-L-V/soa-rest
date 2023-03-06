@@ -14,7 +14,7 @@ export class Producto {
     precio: number;   
 
     @Column()
-    temporal: string;
+    image: string;
 
     @OneToMany(() => DetalleReceta, DetalleReceta => DetalleReceta.producto)
     public DetalleReceta: DetalleReceta[];

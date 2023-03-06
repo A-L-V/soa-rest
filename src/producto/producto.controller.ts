@@ -16,4 +16,10 @@ export class ProductoController {
   findOne(@Param('id') id: number): Promise<Producto> {
     return this.productoService.findOne(+id);
   }
+
+  @Post()
+  create(@Body() createProductoDto: CreateProductoDto) {
+    return this.productoService.create(createProductoDto);
+  }
+
 }
