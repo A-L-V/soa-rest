@@ -12,6 +12,9 @@ export class Producto {
     @Column()
     precio: number;   
 
+    @Column()
+    image: string;
+
     @OneToMany(() => DetalleReceta, DetalleReceta => DetalleReceta.producto)
     public DetalleReceta: DetalleReceta[];
 
