@@ -1,4 +1,4 @@
-import { Injectable , Post} from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { CreateProductoDto } from './dto/create-producto.dto';
 import { UpdateProductoDto } from './dto/update-producto.dto';
 import { Repository } from 'typeorm';
@@ -12,14 +12,12 @@ export class ProductoService {
     private productoRepository: Repository<Producto>,
   ) {}
 
-  @Post()
   create(createProductoDto: CreateProductoDto): Promise<Producto> {
     const newProducto = new Producto()
     newProducto.id=null
     newProducto.nombre = createProductoDto.nombre
     newProducto.precio = createProductoDto.precio
     newProducto.image = createProductoDto.image
-    console.log("Nuevo comprobante" + newProducto.nombre)   
     return this.productoRepository.save(newProducto);
   }
 

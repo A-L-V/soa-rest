@@ -42,5 +42,5 @@ import { ClienteModule } from './cliente/cliente.module';
   providers: [AppService],
 })
 export class AppModule {
-  constructor(private dataSource: DataSource) {}
+  constructor(public dataSource: DataSource) {}
 }
